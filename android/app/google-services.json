@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993480772447",
+    "project_id": "general-30e01",
+    "storage_bucket": "general-30e01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993480772447:android:569d3216189147588c04ea",
+        "android_client_info": {
+          "package_name": "lucky_live_football_tv.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993480772447-a7kk4f5nm3dojkha1dtusuep0c5pn16n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi7LDKlqx3N4jOx5GiBSmztXzZtj0BF1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993480772447-a7kk4f5nm3dojkha1dtusuep0c5pn16n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

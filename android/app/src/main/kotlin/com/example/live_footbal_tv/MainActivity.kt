@@ -1,0 +1,6 @@
+package com.example.live_footbal_tv
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
