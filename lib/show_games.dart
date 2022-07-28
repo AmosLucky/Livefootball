@@ -138,9 +138,9 @@ class _ShowGamesState extends State<ShowGames> {
           // if isLoading is true show loader
           // else show Column of Texts
           child: isLoading
-              ? Center(
-                  child: Container(
-                      margin: EdgeInsets.only(top: 150), child: Shima()))
+              ? Container(
+                  height: 300,
+                  child: Center(child: CircularProgressIndicator()))
               : Container(
                   child: ListView.builder(
                       physics: ScrollPhysics(),
@@ -177,7 +177,8 @@ class _ShowGamesState extends State<ShowGames> {
     return InkWell(
       onTap: () {
         adCounter();
-        if (settings.show_video!) {
+        //settings.show_video!
+        if (true) {
           var route = MaterialPageRoute(
               builder: (BuildContext b) => DisplayVideo(url: match['link']));
           Navigator.of(context).push(route);

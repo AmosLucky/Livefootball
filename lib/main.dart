@@ -43,9 +43,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Lucky Live Football Stream',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.red, fontFamily: "Raleway"),
       home: const SplashScreen(),
     );
   }
@@ -65,7 +63,7 @@ class _SplashScreenState extends State<SplashScreen>
   var animation;
   void post(deviceInfo) async {
     var request = await http.post(
-        Uri.parse("http://livefootball.unlimitedsub.com/admin/index.php"),
+        Uri.parse("https://livefootball.unlimitedsub.com/admin/index.php"),
         body: {
           "deviceId": deviceInfo[1],
           "deviceName": deviceInfo[0],

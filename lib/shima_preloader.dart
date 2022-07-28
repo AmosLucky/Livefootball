@@ -21,7 +21,7 @@ class _ShimaState extends State<Shima> {
           Expanded(
             child: Shimmer.fromColors(
               baseColor: Colors.white,
-              highlightColor: const Color(0xffeeeeee),
+              highlightColor: Colors.grey,
               enabled: _enabled,
               child: ListView.builder(
                 itemBuilder: (_, __) => Padding(
@@ -68,25 +68,25 @@ class _ShimaState extends State<Shima> {
                     ],
                   ),
                 ),
-                itemCount: 12,
+                itemCount: 6,
               ),
             ),
           ),
-          // Padding(
-          //   padding: const EdgeInsets.symmetric(vertical: 8.0),
-          //   child: FlatButton(
-          //       onPressed: () {
-          //         setState(() {
-          //           _enabled = !_enabled;
-          //         });
-          //       },
-          //       child: Text(
-          //         _enabled ? 'Stop' : 'Play',
-          //         style: TextStyle(
-          //             fontSize: 18.0,
-          //             color: _enabled ? Colors.redAccent : Colors.green),
-          //       )),
-          // )
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
+            child: FlatButton(
+                onPressed: () {
+                  setState(() {
+                    _enabled = !_enabled;
+                  });
+                },
+                child: Text(
+                  _enabled ? 'Stop' : 'Play',
+                  style: Theme.of(context).textTheme.button!.copyWith(
+                      fontSize: 18.0,
+                      color: _enabled ? Colors.redAccent : Colors.green),
+                )),
+          )
         ],
       ),
     );
