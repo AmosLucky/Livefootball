@@ -39,12 +39,15 @@
              <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-              <meta-data
+            <meta-data android:name="com.startapp.sdk.206875054" android:value="startapp_app_id" />
+            <meta-data android:name="vn.momo.plugin.startapp.SPLASH_AD_ENABLED" android:value="true" />
+            <meta-data android:name="com.startapp.sdk.RETURN_ADS_ENABLED" android:value="false" />
+              <!-- <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-4776928977402041~5651729425"/>
 
         <meta-data
             android:name="flutterEmbedding"
-            android:value="2" />
+            android:value="2" /> -->
     </application>
 </manifest>

@@ -6,7 +6,6 @@ import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:launch_review/launch_review.dart';
 import 'package:live_footbal_tv/constants.dart';
 import 'package:live_footbal_tv/settings.dart';
@@ -28,8 +27,9 @@ class MyHttpOverrides extends HttpOverrides {
 
 void main() {
   runApp(const MyApp());
-  WidgetsFlutterBinding.ensureInitialized();
-  MobileAds.instance.initialize();
+  // WidgetsFlutterBinding.ensureInitialized();
+
+  /// MobileAds.instance.initialize();
   HttpOverrides.global = MyHttpOverrides();
 }
 

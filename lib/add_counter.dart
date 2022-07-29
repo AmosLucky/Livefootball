@@ -1,17 +1,19 @@
 import 'package:flutter/cupertino.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:live_footbal_tv/constants.dart';
+import 'package:startapp/startapp.dart';
 
 var _interstitialAd;
 var _isInterstitialAdReady = false;
 
 int add_count = 0;
-void adCounter() {
-  print("hhhh");
+void adCounter() async {
+  // await StartApp.showInterstitialAd();
+
   if (add_count >= int.parse(settings.clicks_b4_ads!)) {
     add_count = 0;
 
     if (settings.is_show_ads!) {
+      await StartApp.showInterstitialAd();
       // loadInterstitialAd();
     }
 

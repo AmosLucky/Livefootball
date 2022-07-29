@@ -4,6 +4,7 @@ import 'package:live_footbal_tv/constants.dart';
 import 'package:live_footbal_tv/display_video.dart';
 import 'package:live_footbal_tv/shima_preloader.dart';
 import 'package:live_footbal_tv/widgets.dart';
+import 'package:startapp/startapp.dart';
 import 'package:translator/translator.dart';
 import 'package:html/parser.dart' as parser;
 import 'package:http/http.dart' as http;
@@ -156,12 +157,13 @@ class _ShowGamesState extends State<ShowGames> {
                           count = 0;
                           return Column(
                             children: [
-                              showBannerAdd(
-                                  height: 150,
-                                  width: MediaQuery.of(context).size.width),
-                              SizedBox(
-                                height: 20,
-                              ),
+                              //AdBanner(),
+                              // showBannerAdd(
+                              //     height: 150,
+                              //     width: MediaQuery.of(context).size.width),
+                              // SizedBox(
+                              //   height: 20,
+                              // ),
                               singleMatch(match)
                             ],
                           );

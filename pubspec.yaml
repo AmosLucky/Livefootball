@@ -40,7 +40,7 @@ dependencies:
   translator:
   flutter_translate:
   launch_review: ^3.0.1
-  google_mobile_ads: ^0.13.6
+  startapp: ^0.5.1
   share: ^2.0.4
   flutter_launcher_icons: "^0.9.2"
   device_info_plus: ^3.2.2
